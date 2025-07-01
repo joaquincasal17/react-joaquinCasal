@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(44, 60, 75);
+}
+.titulo{
+    text-align: center;
+    font-size: 30px;
+}

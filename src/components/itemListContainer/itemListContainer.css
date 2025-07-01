@@ -1,0 +1,41 @@
+.catalog{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.card{
+    background-color: rgb(90, 151, 131);
+    height: 200px;
+    width: 10%;
+    margin: 15px;
+    border-radius: 5px;
+
+}
+.card h2{
+    background-color: rgb(162, 216, 197);
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    width:70%;
+    height: 60%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

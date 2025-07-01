@@ -1,0 +1,25 @@
+.header{
+    background-color: rgb(101, 118, 134);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    list-style: none;
+    margin: 10px;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: black;
+}
+
+.navLinks li{
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+    font-size:large;
+}
