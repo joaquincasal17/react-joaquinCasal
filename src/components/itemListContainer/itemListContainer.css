@@ -1,27 +1,21 @@
-.catalog{
+.containerCatalog{
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.catalog{
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
-    
-}
-.card{
-    background-color: rgb(90, 151, 131);
-    height: 200px;
-    width: 10%;
-    margin: 15px;
-    border-radius: 5px;
-
-}
-.card h2{
-    background-color: rgb(162, 216, 197);
-    width: 100%;
-    height: 70%;
-    text-align: center;
+    justify-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 }
+
+
 .btn{
     height: 30%;
     display: flex;

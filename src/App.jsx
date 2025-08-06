@@ -1,25 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router";
 import { ItemListContainer } from "./components/itemListContainer/ItemListContainer"
 import { Nav } from "./components/navbar/nav"
-import {useState} from "react"
+import Cart from "./components/cartWidget/Cart"
+import DetailProduct from "./components/detailProduct/DetailProduct"
+
+
 
 function App() {
-
-  const [contador, setContador] = useState(0)
-  
-  const sumar = () => {
-          setContador (contador + 1)
-  }
   return (
   <>
-    <Nav contador={contador}/>
-
-    <main>
-      <h2 className="titulo">Tienda de Hardware</h2>
-      <ItemListContainer
-      text = {"producto"}
-      funcionSumar = {sumar}
-      />
-     </main>
+  <BrowserRouter>
+    <Nav />
+    <Routes>
+      <Route path="/" element={<ItemListContainer />}/>
+      <Route path="/category/:name" element={<ItemListContainer />} />
+      <Route path="/carrito" element={<Cart />}/>
+      <Route path="/detail/:id" element={<DetailProduct />}/>
+    </Routes>
+  </BrowserRouter> 
   </>
   )
 }
