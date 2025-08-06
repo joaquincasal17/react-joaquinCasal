@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import { ItemListContainer } from "./components/itemListContainer/ItemListContainer"
-import { Nav } from "./components/navbar/nav"
+import { Nav } from "./components/navbar/Nav"
 import Cart from "./components/cartWidget/Cart"
 import DetailProduct from "./components/detailProduct/DetailProduct"
 
